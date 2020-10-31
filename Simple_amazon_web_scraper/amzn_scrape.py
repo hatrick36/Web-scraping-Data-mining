@@ -34,7 +34,7 @@ def send_mail():
     server.starttls()
     server.ehlo()
 
-    server.login('niantic1029@gmail.com', 'cuglpbvcqdnzjefk')
+    server.login('youremail@gmail.com', 'cuglpbvcqdnzjefk')
     subject = 'Price has dropped!'
     body = 'Check the link: https://www.amazon.com/Upgrade-3500Lumens-Projector-Supported-Smartphone/dp/B07YBRGLGW/ref=sr_1_9?crid' \
            '=3LWI7WTR8IQGH&keywords=projector&qid=1578782732&sprefix=projector%2Caps%2C212&sr=8-9 '
