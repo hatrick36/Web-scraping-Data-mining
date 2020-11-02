@@ -86,9 +86,9 @@ class Instabot(object):
 
 
 if __name__ == '__main__':
-    ig_bot = Instabot('_patrick_dowd_', 'Crabapple10')
+    ig_bot = Instabot('USERNAME', 'PASSWORD')
     time.sleep(3)
-    ig_bot.nav_page('_patrick_dowd_')
+    ig_bot.nav_page('USERNAME')
     ig_bot.get_likes(5)
     ig_bot.get_names()
     print(Instabot.username)
