@@ -73,9 +73,9 @@ class Instabot(object):
 
 
 if __name__ == '__main__':
-    ig_bot = Instabot('iamabot_1234', 'GAPES1029')
+    ig_bot = Instabot('USERNAME', 'PASSWORD')
     time.sleep(3)
-    ig_bot.nav_page('iamabot_1234')
+    ig_bot.nav_page('USERNAME')
     ig_bot.get_following_data()
     ig_bot.get_names()
 
