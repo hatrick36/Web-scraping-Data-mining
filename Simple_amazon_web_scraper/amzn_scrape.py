@@ -5,8 +5,7 @@ import time
 url = 'https://www.amazon.com/Upgrade-3500Lumens-Projector-Supported-Smartphone/dp/B07YBRGLGW/ref=sr_1_9?crid' \
       '=3LWI7WTR8IQGH&keywords=projector&qid=1578782732&sprefix=projector%2Caps%2C212&sr=8-9 '
 
-headers = {"user-agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
-                         'Chrome/79.0.3945.88 Safari/537.36 '
+headers = {"user-agent": 'YOUR USER AGENT (can be found with google search)'
            }
 
 
@@ -35,14 +34,14 @@ def send_mail():
     server.starttls()
     server.ehlo()
 
-    server.login('niantic1029@gmail.com', 'cuglpbvcqdnzjefk')
-    subject = 'Price Fell!'
+    server.login('youremail@gmail.com', 'cuglpbvcqdnzjefk')
+    subject = 'Price has dropped!'
     body = 'Check the link: https://www.amazon.com/Upgrade-3500Lumens-Projector-Supported-Smartphone/dp/B07YBRGLGW/ref=sr_1_9?crid' \
            '=3LWI7WTR8IQGH&keywords=projector&qid=1578782732&sprefix=projector%2Caps%2C212&sr=8-9 '
     msg = f"Subject: {subject}\n\n{body}"
     server.sendmail(
-        'niantic1029@gmail.com',
-        'dowdp282@gmail.com',
+        'sendemail@gmail.com',
+        'recieveemail@gmail.com',
         msg
     )
     print('EMAIL HAS BEEN SENT')
